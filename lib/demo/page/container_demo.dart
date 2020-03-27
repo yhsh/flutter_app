@@ -11,7 +11,10 @@ class ContainerDemo extends StatelessWidget {
           leading: IconButton(
               icon: Icon(Icons.arrow_back),
               onPressed: () => Navigator.pop(context)),
-          title: Text("Container用法"),
+          title: Text(
+            "Container用法",
+            style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+          ),
           centerTitle: true,
           backgroundColor: Colors.cyan,
           elevation: 10,

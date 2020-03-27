@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
 class Study extends StatefulWidget {
@@ -28,7 +29,7 @@ class StudyPage extends State<Study> {
           title: Text(
             "基础知识",
             style: TextStyle(
-              fontSize: 18,
+              fontSize: 16,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -43,16 +44,18 @@ class StudyPage extends State<Study> {
         ),
         body: ListView(
           children: <Widget>[
-            buildGestureDetector(context, "Text基本用法",TextDemo()),
-            buildGestureDetector(context, "TextRich用法",BasicDemo()),
-            buildGestureDetector(context, "Container用法",ContainerDemo()),
+            buildGestureDetector(context, "Text基本用法", TextDemo()),
+            buildGestureDetector(context, "TextRich用法", BasicDemo()),
+            buildGestureDetector(context, "Container用法", ContainerDemo()),
+            buildGestureDetector(context, "SizedBox用法", SizedBoxDemo()),
           ],
         ),
       ),
     );
   }
 
-  GestureDetector buildGestureDetector(BuildContext context, String content,Widget myWidget) {
+  GestureDetector buildGestureDetector(
+      BuildContext context, String content, Widget myWidget) {
     return GestureDetector(
       child: Container(
         decoration: BoxDecoration(
