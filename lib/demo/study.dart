@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
+import 'package:flutter_app/demo/page/container_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
 class Study extends StatefulWidget {
@@ -44,6 +45,7 @@ class StudyPage extends State<Study> {
           children: <Widget>[
             buildGestureDetector(context, "Text基本用法",TextDemo()),
             buildGestureDetector(context, "TextRich用法",BasicDemo()),
+            buildGestureDetector(context, "Container用法",ContainerDemo()),
           ],
         ),
       ),
