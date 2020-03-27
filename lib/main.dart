@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/demo/study.dart';
 
 import 'bottom_navigation_bar_demo.dart';
 import 'drawer_demo.dart';
@@ -51,7 +52,12 @@ class Home extends StatelessWidget {
               IconButton(
                   icon: Icon(Icons.search),
                   tooltip: "搜索按钮",
-                  onPressed: () => debugPrint("点击了右侧搜索按钮")),
+//                  onPressed: () => debugPrint("点击了右侧搜索按钮")),
+                  onPressed: () => Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        //跳转demo页面
+                        return Study();
+                      }))),
             ],
             bottom: TabBar(
               //未选中的tab颜色
