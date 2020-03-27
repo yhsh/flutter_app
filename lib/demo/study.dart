@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/grid_view_demo.dart';
+import 'package:flutter_app/demo/page/page_view_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
@@ -48,6 +50,8 @@ class StudyPage extends State<Study> {
             buildGestureDetector(context, "TextRich用法", BasicDemo()),
             buildGestureDetector(context, "Container用法", ContainerDemo()),
             buildGestureDetector(context, "SizedBox用法", SizedBoxDemo()),
+            buildGestureDetector(context, "PageView用法", PageViewDemo()),
+            buildGestureDetector(context, "GridView用法", GridViewDemo()),
           ],
         ),
       ),
