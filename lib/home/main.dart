@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/study.dart';
+import 'package:flutter_app/home/widget/layout_demo.dart';
 
-import 'bottom_navigation_bar_demo.dart';
-import 'drawer_demo.dart';
+import 'widget/bottom_navigation_bar_demo.dart';
+import 'widget/drawer_demo.dart';
 
 void main() {
   runApp(App());
@@ -12,6 +13,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //查看进程时候显示的tittle
+      title: "flutter案例",
         //不显示右上角debug图标
         debugShowCheckedModeBanner: false,
         home: Home(),
@@ -79,7 +82,7 @@ class Home extends StatelessWidget {
             children: <Widget>[
               Icon(Icons.local_florist, size: 148.0, color: Colors.cyan),
               Icon(Icons.history, size: 148.0, color: Colors.cyan),
-              Icon(Icons.directions_bike, size: 148.0, color: Colors.cyan)
+              LayoutDemo()
             ],
           ),
           //抽屉效果
