@@ -4,6 +4,9 @@ import 'package:flutter_app/demo/page/container_demo.dart';
 import 'package:flutter_app/demo/page/grid_view_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
+import 'package:flutter_app/demo/page/base_activity.dart';
+import 'package:flutter_app/demo/page/sliver_grid_demo.dart';
+import 'package:flutter_app/demo/page/sliver_list_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
 class Study extends StatefulWidget {
@@ -52,6 +55,8 @@ class StudyPage extends State<Study> {
             buildGestureDetector(context, "SizedBox用法", SizedBoxDemo()),
             buildGestureDetector(context, "PageView用法", PageViewDemo()),
             buildGestureDetector(context, "GridView用法", GridViewDemo()),
+            buildGestureDetector(context, "SliverGridDemo用法", SilverGridDemo()),
+            buildGestureDetector(context, "SliverListDemo用法", SilverListDemo()),
           ],
         ),
       ),
