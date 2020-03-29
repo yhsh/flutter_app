@@ -1,6 +1,6 @@
 # flutter_app
 
-My First Flutter application.
+flutter学习基础案例.
 
 ## Getting Started
 
