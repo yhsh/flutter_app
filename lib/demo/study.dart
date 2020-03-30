@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/form_demo.dart';
 import 'package:flutter_app/demo/page/gradual_ink_demo.dart';
 import 'package:flutter_app/demo/page/grid_view_demo.dart';
+import 'package:flutter_app/demo/page/register_demo.dart';
 import 'package:flutter_app/demo/page/navigator_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
@@ -60,6 +62,8 @@ class StudyPage extends State<Study> {
             buildGestureDetector(context, "SliverList用法", SilverListDemo()),
             buildGestureDetector(context, "Navigator路由用法", NavigatorDemo()),
             buildGestureDetector(context, "NGradualInk渐墨效果", GradualInkDemo()),
+            buildGestureDetector(context, "Form默认主题和编辑框", FormDemo()),
+            buildGestureDetector(context, "登录案例", RegisterDemo()),
           ],
         ),
       ),

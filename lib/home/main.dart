@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/form_demo.dart';
 import 'package:flutter_app/demo/study.dart';
 import 'package:flutter_app/home/widget/layout_demo.dart';
 import 'package:flutter_app/home/widget/view_demo.dart';
@@ -19,7 +20,12 @@ class App extends StatelessWidget {
         title: "flutter案例",
         //不显示右上角debug图标
         debugShowCheckedModeBanner: false,
-        routes: {"/containerDemo": (context) => ContainerDemo()},
+        //默认路由设置fromDemo为默认页面
+//        initialRoute: "/formDemo",
+        routes: {
+          "/containerDemo": (context) => ContainerDemo(),
+          "/formDemo": (context) => FormDemo()
+        },
         home: Home(),
         theme: ThemeData(
             //自定义水波纹效果
