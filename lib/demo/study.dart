@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/flat_button_demo.dart';
 import 'package:flutter_app/demo/page/form_demo.dart';
 import 'package:flutter_app/demo/page/gradual_ink_demo.dart';
 import 'package:flutter_app/demo/page/grid_view_demo.dart';
+import 'package:flutter_app/demo/page/material_components.dart';
+import 'package:flutter_app/demo/page/popup_menu_button_demo.dart';
 import 'package:flutter_app/demo/page/register_demo.dart';
 import 'package:flutter_app/demo/page/navigator_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
@@ -64,6 +67,10 @@ class StudyPage extends State<Study> {
             buildGestureDetector(context, "NGradualInk渐墨效果", GradualInkDemo()),
             buildGestureDetector(context, "Form默认主题和编辑框", FormDemo()),
             buildGestureDetector(context, "登录案例", RegisterDemo()),
+            buildGestureDetector(
+                context, "MaterialComponents案例", MaterialComponents()),
+            buildGestureDetector(context, "按钮相关案例", FlatButtonDemo()),
+            buildGestureDetector(context, "弹出式菜单", PopupMenuButtonDemo()),
           ],
         ),
       ),
