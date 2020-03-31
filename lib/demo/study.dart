@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
+import 'package:flutter_app/demo/page/check_box_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/date_time_demo.dart';
 import 'package:flutter_app/demo/page/flat_button_demo.dart';
 import 'package:flutter_app/demo/page/form_demo.dart';
 import 'package:flutter_app/demo/page/gradual_ink_demo.dart';
 import 'package:flutter_app/demo/page/grid_view_demo.dart';
 import 'package:flutter_app/demo/page/material_components.dart';
 import 'package:flutter_app/demo/page/popup_menu_button_demo.dart';
+import 'package:flutter_app/demo/page/radio_demo.dart';
 import 'package:flutter_app/demo/page/register_demo.dart';
 import 'package:flutter_app/demo/page/navigator_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
+import 'package:flutter_app/demo/page/slider_demo.dart';
 import 'package:flutter_app/demo/page/sliver_grid_demo.dart';
 import 'package:flutter_app/demo/page/sliver_list_demo.dart';
+import 'package:flutter_app/demo/page/switch_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
 class Study extends StatefulWidget {
@@ -55,29 +60,35 @@ class StudyPage extends State<Study> {
         ),
         body: ListView(
           children: <Widget>[
-            buildGestureDetector(context, "Text基本用法", TextDemo()),
-            buildGestureDetector(context, "TextRich用法", BasicDemo()),
-            buildGestureDetector(context, "Container用法", ContainerDemo()),
-            buildGestureDetector(context, "SizedBox用法", SizedBoxDemo()),
-            buildGestureDetector(context, "PageView用法", PageViewDemo()),
-            buildGestureDetector(context, "GridView用法", GridViewDemo()),
-            buildGestureDetector(context, "SliverGrid用法", SilverGridDemo()),
-            buildGestureDetector(context, "SliverList用法", SilverListDemo()),
-            buildGestureDetector(context, "Navigator路由用法", NavigatorDemo()),
-            buildGestureDetector(context, "NGradualInk渐墨效果", GradualInkDemo()),
-            buildGestureDetector(context, "Form默认主题和编辑框", FormDemo()),
-            buildGestureDetector(context, "登录案例", RegisterDemo()),
-            buildGestureDetector(
+            buildListItem(context, "Text基本用法", TextDemo()),
+            buildListItem(context, "TextRich用法", BasicDemo()),
+            buildListItem(context, "Container用法", ContainerDemo()),
+            buildListItem(context, "SizedBox用法", SizedBoxDemo()),
+            buildListItem(context, "PageView用法", PageViewDemo()),
+            buildListItem(context, "GridView用法", GridViewDemo()),
+            buildListItem(context, "SliverGrid用法", SilverGridDemo()),
+            buildListItem(context, "SliverList用法", SilverListDemo()),
+            buildListItem(context, "Navigator路由用法", NavigatorDemo()),
+            buildListItem(context, "NGradualInk渐墨效果", GradualInkDemo()),
+            buildListItem(context, "Form默认主题和编辑框", FormDemo()),
+            buildListItem(context, "登录案例", RegisterDemo()),
+            buildListItem(
                 context, "MaterialComponents案例", MaterialComponents()),
-            buildGestureDetector(context, "按钮相关案例", FlatButtonDemo()),
-            buildGestureDetector(context, "弹出式菜单", PopupMenuButtonDemo()),
+            buildListItem(context, "按钮相关案例", FlatButtonDemo()),
+            buildListItem(context, "弹出式菜单", PopupMenuButtonDemo()),
+            buildListItem(context, "复选框", CheckBoxDemo()),
+            buildListItem(context, "单选框", RadioDemo()),
+            buildListItem(context, "开关按钮", SwitchDemo()),
+            buildListItem(context, "Slider进度控件(progressBar)", SliderDemo()),
+            buildListItem(context, "时间和日期控件", DateTimeDemo()),
           ],
         ),
       ),
     );
   }
 
-  GestureDetector buildGestureDetector(
+  //生成每个item控件
+  GestureDetector buildListItem(
       BuildContext context, String content, Widget myWidget) {
     return GestureDetector(
       child: Container(
