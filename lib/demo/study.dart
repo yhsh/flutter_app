@@ -13,6 +13,7 @@ import 'package:flutter_app/demo/page/radio_demo.dart';
 import 'package:flutter_app/demo/page/register_demo.dart';
 import 'package:flutter_app/demo/page/navigator_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
+import 'package:flutter_app/demo/page/simple_dialog_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/slider_demo.dart';
 import 'package:flutter_app/demo/page/sliver_grid_demo.dart';
@@ -81,6 +82,7 @@ class StudyPage extends State<Study> {
             buildListItem(context, "开关按钮", SwitchDemo()),
             buildListItem(context, "Slider进度控件(progressBar)", SliderDemo()),
             buildListItem(context, "时间和日期控件", DateTimeDemo()),
+            buildListItem(context, "对话框等控件", SimpleDialogDemo()),
           ],
         ),
       ),
