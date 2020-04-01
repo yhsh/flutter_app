@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
+import 'package:flutter_app/demo/page/bottom_sheet_demo.dart';
 import 'package:flutter_app/demo/page/check_box_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
 import 'package:flutter_app/demo/page/date_time_demo.dart';
+import 'package:flutter_app/demo/page/expansion_panel_demo.dart';
 import 'package:flutter_app/demo/page/flat_button_demo.dart';
 import 'package:flutter_app/demo/page/form_demo.dart';
 import 'package:flutter_app/demo/page/gradual_ink_demo.dart';
@@ -83,6 +85,8 @@ class StudyPage extends State<Study> {
             buildListItem(context, "Slider进度控件(progressBar)", SliderDemo()),
             buildListItem(context, "时间和日期控件", DateTimeDemo()),
             buildListItem(context, "对话框等控件", SimpleDialogDemo()),
+            buildListItem(context, "BottomSheet控件", BottomSheetDemo()),
+            buildListItem(context, "扩展控件ExpansionPanel", ExpansionPanelDemo()),
           ],
         ),
       ),

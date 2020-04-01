@@ -30,7 +30,7 @@ class _DateTimeDemoState extends State<DateTimeDemo> {
   Future<void> selectedShowTime() async {
     var selectedTime =
         await showTimePicker(context: context, initialTime: TimeOfDay.now());
-    if (defaultTime != null) {
+    if (selectedTime != null) {
       setState(() {
         defaultTime = selectedTime;
       });
