@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/bottom_sheet_demo.dart';
 import 'package:flutter_app/demo/page/check_box_demo.dart';
+import 'package:flutter_app/demo/page/chip_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
 import 'package:flutter_app/demo/page/date_time_demo.dart';
 import 'package:flutter_app/demo/page/expansion_panel_demo.dart';
@@ -87,6 +88,7 @@ class StudyPage extends State<Study> {
             buildListItem(context, "对话框等控件", SimpleDialogDemo()),
             buildListItem(context, "BottomSheet控件", BottomSheetDemo()),
             buildListItem(context, "扩展控件ExpansionPanel", ExpansionPanelDemo()),
+            buildListItem(context, "小碎片Clip", ChipDemo()),
           ],
         ),
       ),

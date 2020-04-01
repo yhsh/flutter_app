@@ -45,10 +45,12 @@ class Home extends StatelessWidget {
         child: Scaffold(
           backgroundColor: Colors.grey[100],
           appBar: AppBar(
+            iconTheme: IconThemeData(color: Colors.white),
             title: Center(
               child: Text(
                 "XiaYiYe_Flutter",
                 textDirection: TextDirection.ltr,
+                style: TextStyle(color: Colors.white),
               ),
             ),
             //阴影高度
