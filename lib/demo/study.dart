@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/bottom_sheet_demo.dart';
+import 'package:flutter_app/demo/page/card_demo.dart';
 import 'package:flutter_app/demo/page/check_box_demo.dart';
 import 'package:flutter_app/demo/page/chip_demo.dart';
 import 'package:flutter_app/demo/page/container_demo.dart';
+import 'package:flutter_app/demo/page/data_table_demo.dart';
 import 'package:flutter_app/demo/page/date_time_demo.dart';
 import 'package:flutter_app/demo/page/expansion_panel_demo.dart';
 import 'package:flutter_app/demo/page/flat_button_demo.dart';
@@ -21,6 +23,7 @@ import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/slider_demo.dart';
 import 'package:flutter_app/demo/page/sliver_grid_demo.dart';
 import 'package:flutter_app/demo/page/sliver_list_demo.dart';
+import 'package:flutter_app/demo/page/stepper_demo.dart';
 import 'package:flutter_app/demo/page/switch_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
@@ -89,6 +92,9 @@ class StudyPage extends State<Study> {
             buildListItem(context, "BottomSheet控件", BottomSheetDemo()),
             buildListItem(context, "扩展控件ExpansionPanel", ExpansionPanelDemo()),
             buildListItem(context, "小碎片Clip", ChipDemo()),
+            buildListItem(context, "数据表格控件", DataTableDemo()),
+            buildListItem(context, "卡片布局", CardDemo()),
+            buildListItem(context, "物流时间轴", StepperDemo()),
           ],
         ),
       ),
