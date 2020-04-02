@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/demo/page/animation_demo.dart';
 import 'package:flutter_app/demo/page/basic_demo.dart';
 import 'package:flutter_app/demo/page/bottom_sheet_demo.dart';
 import 'package:flutter_app/demo/page/card_demo.dart';
@@ -28,6 +29,7 @@ import 'package:flutter_app/demo/page/stepper_demo.dart';
 import 'package:flutter_app/demo/page/stream_demo.dart';
 import 'package:flutter_app/demo/page/switch_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
+import 'package:flutter_app/demo/page/tween_demo.dart';
 
 class Study extends StatefulWidget {
   @override
@@ -99,6 +101,8 @@ class StudyPage extends State<Study> {
             buildListItem(context, "物流时间轴", StepperDemo()),
             buildListItem(context, "状态管理", StateManagerDemo()),
             buildListItem(context, "stream", StreamDemo()),
+            buildListItem(context, "animation动画相关练习", AnimationDemo()),
+            buildListItem(context, "Tween动画相关练习", TweenDemo()),
           ],
         ),
       ),
