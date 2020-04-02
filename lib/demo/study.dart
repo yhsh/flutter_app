@@ -23,7 +23,9 @@ import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/slider_demo.dart';
 import 'package:flutter_app/demo/page/sliver_grid_demo.dart';
 import 'package:flutter_app/demo/page/sliver_list_demo.dart';
+import 'package:flutter_app/demo/page/state_manager_demo.dart';
 import 'package:flutter_app/demo/page/stepper_demo.dart';
+import 'package:flutter_app/demo/page/stream_demo.dart';
 import 'package:flutter_app/demo/page/switch_demo.dart';
 import 'package:flutter_app/demo/page/text_demo.dart';
 
@@ -95,6 +97,8 @@ class StudyPage extends State<Study> {
             buildListItem(context, "数据表格控件", DataTableDemo()),
             buildListItem(context, "卡片布局", CardDemo()),
             buildListItem(context, "物流时间轴", StepperDemo()),
+            buildListItem(context, "状态管理", StateManagerDemo()),
+            buildListItem(context, "stream", StreamDemo()),
           ],
         ),
       ),
