@@ -19,6 +19,7 @@ import 'package:flutter_app/demo/page/radio_demo.dart';
 import 'package:flutter_app/demo/page/register_demo.dart';
 import 'package:flutter_app/demo/page/navigator_demo.dart';
 import 'package:flutter_app/demo/page/page_view_demo.dart';
+import 'package:flutter_app/demo/page/rx_dart_demo.dart';
 import 'package:flutter_app/demo/page/simple_dialog_demo.dart';
 import 'package:flutter_app/demo/page/sized_box_demo.dart';
 import 'package:flutter_app/demo/page/slider_demo.dart';
@@ -102,6 +103,7 @@ class StudyPage extends State<Study> {
             buildListItem(context, "状态管理", StateManagerDemo()),
             buildListItem(context, "stream", StreamDemo()),
             buildListItem(context, "animation动画相关练习", AnimationDemo()),
+            buildListItem(context, "RxDart练习", RxDartDemo()),
             buildListItem(context, "Tween动画相关练习", TweenDemo()),
           ],
         ),

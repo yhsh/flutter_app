@@ -22,6 +22,8 @@ dependencies:
 
   # 添加时间显示的第三方库，依赖库必须跟上面的flutter对齐，否则报错
   intl: ^0.16.1
+  # 增加RxDart包,必须使用0.18.1版本，否则没有Observable这个类
+  rxdart: ^0.18.1
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
